@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:textColorHint="@color/black">
+
+        <AutoCompleteTextView
+            android:id="@+id/phno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter phone number"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textIsSelectable="false" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/codebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Verification Code" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:textColorHint="@color/black">
+
+        <AutoCompleteTextView
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter otp"
+            android:imeOptions="actionNext"
+
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textIsSelectable="false" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/codelogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login" />
+</LinearLayout>
